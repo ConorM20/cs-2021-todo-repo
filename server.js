@@ -5,8 +5,12 @@
 const express = require("express");
 const { store, Todo } = require("./model");
 const fs = require('fs');
-// instantiate your app/server
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
+app.use(express.static("static"));
+// instantiate your app/server
 
 // tell our app to use json (this is an example of a middleware but this one
 // is implemented for us)
