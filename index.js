@@ -1,4 +1,5 @@
 //new comment
+//comment number 2
 
 // This file is in charge of starting the application
 const server = require("./server");
